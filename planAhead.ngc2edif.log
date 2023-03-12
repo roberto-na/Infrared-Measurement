@@ -1,0 +1,52 @@
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Top.ngc ...
+WARNING:NetListWriters:298 - No output is written to Top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U7/Msub_GND_14_o_GND_14_o_sub_22_OUT<9:0>_lut<7 : 1> on block Top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus U7/n0101<8 : 2> on block Top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U7/ResponseDuration[14]_PWR_14_o_div_19/Madd_a[23]_GND_16_o_add_47_OUT[23:0]_
+   lut<23 : 3> on block Top is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U7/ResponseDuration[14]_PWR_14_o_div_19/Madd_a[23]_GND_16_o_add_45_OUT[23:0]_
+   lut<23 : 4> on block Top is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U7/ResponseDuration[14]_PWR_14_o_div_19/Madd_a[23]_GND_16_o_add_43_OUT[23:0]_
+   lut<23 : 5> on block Top is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U7/ResponseDuration[14]_PWR_14_o_div_19/Madd_a[23]_GND_16_o_add_41_OUT_lut<23
+   : 6> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   U7/ResponseDuration[14]_PWR_14_o_div_19/Madd_a[23]_GND_16_o_add_39_OUT_lut<23
+   : 7> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   U7/ResponseDuration[14]_PWR_14_o_div_19/Madd_a[23]_GND_16_o_add_37_OUT_lut<23
+   : 8> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   U7/ResponseDuration[14]_PWR_14_o_div_19/Madd_a[23]_GND_16_o_add_35_OUT_lut<23
+   : 9> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   U7/ResponseDuration[14]_PWR_14_o_div_19/Madd_a[23]_GND_16_o_add_33_OUT_lut<23
+   : 10> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   U7/ResponseDuration[14]_PWR_14_o_div_19/Madd_a[23]_b[14]_add_31_OUT_lut<22 :
+   11> on block Top is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file Top.edif ...
+ngc2edif: Total memory usage is 84556 kilobytes
+

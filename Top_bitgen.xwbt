@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\ProySisDigAva\Final_Project_My_Height\Top.ncd
+OUTFILE=C:\ProySisDigAva\Final_Project_My_Height\Top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\ProySisDigAva\Final_Project_My_Height
+LICENSE=WebPack
+USER_INFO=211569669_0_0_833

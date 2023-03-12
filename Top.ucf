@@ -1,0 +1,39 @@
+#PACE: Start of PACE I/O Pin Assignments
+#Pins para la tableta Nexys 3
+NET "Rst"           LOC = "B8";
+NET "Clk_100M"      LOC = "V10";
+NET "Red<2>"        LOC = "N7";  #Rojo  MSB 
+NET "Red<1>"        LOC = "V7";  #Rojo  middle bit
+NET "Red<0>"        LOC = "U7";  #Rojo  LSB
+NET "Green<2>"      LOC = "V6";  #Green MSB
+NET "Green<1>"      LOC = "T6";  #Green middle bit
+NET "Green<0>"      LOC = "P8";  #Green LSB
+NET "Blue<1>"       LOC = "T7";  #Blue  MSB
+NET "Blue<0>"       LOC = "R7";  #Blue  LSB
+NET "Hsync"         LOC = "N6";
+NET "Vsync"         LOC = "P7";
+
+NET "Seg[0]" LOC = T17;
+NET "Seg[1]" LOC = T18;
+NET "Seg[2]" LOC = U17;
+NET "Seg[3]" LOC = U18;
+NET "Seg[4]" LOC = M14;
+NET "Seg[5]" LOC = N14;
+NET "Seg[6]" LOC = L14;
+NET "Seg[7]" LOC = M13;
+
+NET "LEDs[7]" LOC = T11;
+NET "LEDs[6]" LOC = R11;
+NET "LEDs[5]" LOC = N11;
+NET "LEDs[4]" LOC = M11;
+NET "LEDs[3]" LOC = V15;
+NET "LEDs[2]" LOC = U15;
+NET "LEDs[1]" LOC = V16;
+NET "LEDs[0]" LOC = U16;
+
+NET "Sel[3]" LOC = N16;
+NET "Sel[2]" LOC = N15;
+NET "Sel[1]" LOC = P18;
+NET "Sel[0]" LOC = P17;
+NET "Rx" LOC = N10;
+NET "Tx" LOC = P11;

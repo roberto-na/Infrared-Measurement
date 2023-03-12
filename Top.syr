@@ -1,0 +1,1075 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\ProySisDigAva\Final_Project_My_Height\VGA_Display.vhd" into library work
+Parsing entity <VGA_Display>.
+Parsing architecture <Behavioral> of entity <vga_display>.
+Parsing VHDL file "C:\ProySisDigAva\Final_Project_My_Height\VGA.vhd" into library work
+Parsing entity <VGA>.
+Parsing architecture <Behavioral> of entity <vga>.
+Parsing VHDL file "C:\ProySisDigAva\Final_Project_My_Height\Refresh_Screen.vhd" into library work
+Parsing entity <Refresh_Screen>.
+Parsing architecture <Behavioral> of entity <refresh_screen>.
+Parsing VHDL file "C:\ProySisDigAva\Final_Project_My_Height\Refresh_Display.vhd" into library work
+Parsing entity <Refresh_Display>.
+Parsing architecture <Behavioral> of entity <refresh_display>.
+Parsing VHDL file "C:\ProySisDigAva\Final_Project_My_Height\Ping_Sensor.vhd" into library work
+Parsing entity <Ping_Sensor>.
+Parsing architecture <Behavioral> of entity <ping_sensor>.
+Parsing VHDL file "C:\ProySisDigAva\Final_Project_My_Height\Mux4a1_Info.vhd" into library work
+Parsing entity <Mux4a1_Info>.
+Parsing architecture <Behavioral> of entity <mux4a1_info>.
+Parsing VHDL file "C:\ProySisDigAva\Final_Project_My_Height\Mux4a1_Disp.vhd" into library work
+Parsing entity <Mux4a1_Disp>.
+Parsing architecture <Behavioral> of entity <mux4a1_disp>.
+Parsing VHDL file "C:\ProySisDigAva\Final_Project_My_Height\Mux3a1_Color.vhd" into library work
+Parsing entity <Mux3a1_Color>.
+Parsing architecture <Behavioral> of entity <mux3a1_color>.
+Parsing VHDL file "C:\ProySisDigAva\Final_Project_My_Height\DecBCD7Seg.vhd" into library work
+Parsing entity <DecBCD7Seg>.
+Parsing architecture <Behavioral> of entity <decbcd7seg>.
+Parsing VHDL file "C:\ProySisDigAva\Final_Project_My_Height\Cont0a3.vhd" into library work
+Parsing entity <Cont0a3>.
+Parsing architecture <Behavioral> of entity <cont0a3>.
+Parsing VHDL file "C:\ProySisDigAva\Final_Project_My_Height\Cont0a2.vhd" into library work
+Parsing entity <Cont0a2>.
+Parsing architecture <Behavioral> of entity <cont0a2>.
+Parsing VHDL file "C:\ProySisDigAva\Final_Project_My_Height\Clk_Divider_VGA.vhd" into library work
+Parsing entity <Clk_Divider_VGA>.
+Parsing architecture <Behavioral> of entity <clk_divider_vga>.
+Parsing VHDL file "C:\ProySisDigAva\Final_Project_My_Height\Clk_Divider_Ping.vhd" into library work
+Parsing entity <Clk_Divider_Ping>.
+Parsing architecture <Behavioral> of entity <clk_divider_ping>.
+Parsing VHDL file "C:\ProySisDigAva\Final_Project_My_Height\Top.vhd" into library work
+Parsing entity <Top>.
+Parsing architecture <Behavioral> of entity <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Top> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Clk_Divider_VGA> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <VGA> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <VGA_Display> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Refresh_Screen> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Cont0a2> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Mux3a1_Color> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Ping_Sensor> (architecture <Behavioral>) with generics from library <work>.
+INFO:HDLCompiler:679 - "C:\ProySisDigAva\Final_Project_My_Height\Ping_Sensor.vhd" Line 151. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\ProySisDigAva\Final_Project_My_Height\Ping_Sensor.vhd" Line 165. Case statement is complete. others clause is never selected
+
+Elaborating entity <Clk_Divider_Ping> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Refresh_Display> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Cont0a3> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Mux4a1_Info> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Mux4a1_Disp> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DecBCD7Seg> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top>.
+    Related source file is "C:\ProySisDigAva\Final_Project_My_Height\Top.vhd".
+        MX_HS = 800
+        MX_VS = 521
+    Summary:
+	no macro.
+Unit <Top> synthesized.
+
+Synthesizing Unit <Clk_Divider_VGA>.
+    Related source file is "C:\ProySisDigAva\Final_Project_My_Height\Clk_Divider_VGA.vhd".
+    Found 2-bit register for signal <Cont>.
+    Found 2-bit adder for signal <Cont[1]_GND_7_o_add_0_OUT> created at line 41.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+Unit <Clk_Divider_VGA> synthesized.
+
+Synthesizing Unit <VGA>.
+    Related source file is "C:\ProySisDigAva\Final_Project_My_Height\VGA.vhd".
+        MX_HS = 800
+        MX_VS = 521
+    Found 2-bit register for signal <pr_state>.
+    Found 10-bit register for signal <CuentaH>.
+    Found 10-bit register for signal <CuentaV>.
+    Found finite state machine <FSM_0> for signal <pr_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 8                                              |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | Rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | al_hs                                          |
+    | Power Up State     | al_hs                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit adder for signal <CuentaH[9]_GND_8_o_add_5_OUT> created at line 87.
+    Found 10-bit adder for signal <CuentaV[9]_GND_8_o_add_11_OUT> created at line 96.
+    Found 10-bit subtractor for signal <X> created at line 33.
+    Found 10-bit subtractor for signal <Y> created at line 34.
+    Found 10-bit comparator lessequal for signal <n0003> created at line 72
+    Found 10-bit comparator equal for signal <Tiempo[9]_CuentaH[9]_equal_5_o> created at line 83
+    Found 10-bit comparator lessequal for signal <n0026> created at line 140
+    Found 10-bit comparator lessequal for signal <n0028> created at line 140
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   1 Finite State Machine(s).
+Unit <VGA> synthesized.
+
+Synthesizing Unit <VGA_Display>.
+    Related source file is "C:\ProySisDigAva\Final_Project_My_Height\VGA_Display.vhd".
+        MX_HS = 800
+        MX_VS = 521
+    Found 8-bit 12-to-1 multiplexer for signal <_n0977> created at line 35.
+    Found 8-bit 12-to-1 multiplexer for signal <_n0979> created at line 34.
+    Found 8-bit 12-to-1 multiplexer for signal <_n0981> created at line 33.
+    Found 10-bit comparator greater for signal <PWR_10_o_Xin[9]_LessThan_26_o> created at line 61
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_30_o> created at line 62
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_31_o> created at line 62
+    Found 10-bit comparator greater for signal <PWR_10_o_Xin[9]_LessThan_76_o> created at line 87
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_81_o> created at line 88
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_90_o> created at line 97
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_91_o> created at line 97
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_94_o> created at line 98
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_95_o> created at line 98
+    Found 10-bit comparator greater for signal <PWR_10_o_Xin[9]_LessThan_102_o> created at line 100
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_103_o> created at line 100
+    Found 10-bit comparator greater for signal <PWR_10_o_Xin[9]_LessThan_106_o> created at line 101
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_107_o> created at line 101
+    Found 10-bit comparator greater for signal <PWR_10_o_Xin[9]_LessThan_124_o> created at line 112
+    Found 10-bit comparator greater for signal <PWR_10_o_Xin[9]_LessThan_128_o> created at line 113
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_133_o> created at line 114
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_155_o> created at line 126
+    Found 10-bit comparator greater for signal <PWR_10_o_Xin[9]_LessThan_158_o> created at line 127
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_182_o> created at line 139
+    Found 10-bit comparator greater for signal <PWR_10_o_Xin[9]_LessThan_185_o> created at line 140
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_186_o> created at line 140
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_203_o> created at line 151
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_211_o> created at line 153
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_214_o> created at line 154
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_219_o> created at line 155
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_235_o> created at line 165
+    Found 10-bit comparator greater for signal <PWR_10_o_Xin[9]_LessThan_246_o> created at line 168
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_247_o> created at line 168
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_251_o> created at line 169
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_261_o> created at line 178
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_262_o> created at line 178
+    Found 10-bit comparator greater for signal <PWR_10_o_Xin[9]_LessThan_269_o> created at line 180
+    Found 10-bit comparator greater for signal <PWR_10_o_Xin[9]_LessThan_273_o> created at line 181
+    Found 10-bit comparator greater for signal <Xin[9]_PWR_10_o_LessThan_274_o> created at line 181
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_308_o> created at line 210
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_312_o> created at line 211
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_313_o> created at line 211
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_358_o> created at line 236
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_363_o> created at line 237
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_372_o> created at line 246
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_373_o> created at line 246
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_376_o> created at line 247
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_377_o> created at line 247
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_384_o> created at line 249
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_385_o> created at line 249
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_388_o> created at line 250
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_389_o> created at line 250
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_406_o> created at line 261
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_410_o> created at line 262
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_415_o> created at line 263
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_437_o> created at line 275
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_464_o> created at line 288
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_467_o> created at line 289
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_468_o> created at line 289
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_485_o> created at line 300
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_496_o> created at line 303
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_497_o> created at line 303
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_501_o> created at line 304
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_517_o> created at line 314
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_528_o> created at line 317
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_529_o> created at line 317
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_543_o> created at line 327
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_544_o> created at line 327
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_551_o> created at line 329
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_552_o> created at line 329
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_555_o> created at line 330
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_556_o> created at line 330
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_590_o> created at line 359
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_594_o> created at line 360
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_595_o> created at line 360
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_640_o> created at line 385
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_645_o> created at line 386
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_654_o> created at line 395
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_655_o> created at line 395
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_658_o> created at line 396
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_659_o> created at line 396
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_666_o> created at line 398
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_667_o> created at line 398
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_670_o> created at line 399
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_671_o> created at line 399
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_688_o> created at line 410
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_692_o> created at line 411
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_697_o> created at line 412
+    Found 10-bit comparator greater for signal <GND_9_o_Yin[9]_LessThan_712_o> created at line 422
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_719_o> created at line 424
+    Found 10-bit comparator greater for signal <Yin[9]_GND_9_o_LessThan_725_o> created at line 425
+    Found 10-bit comparator greater for signal <Yin[9]_GND_9_o_LessThan_744_o> created at line 436
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_746_o> created at line 437
+    Found 10-bit comparator greater for signal <GND_9_o_Yin[9]_LessThan_747_o> created at line 437
+    Found 10-bit comparator greater for signal <Yin[9]_GND_9_o_LessThan_748_o> created at line 437
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_749_o> created at line 438
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_750_o> created at line 438
+    Found 10-bit comparator greater for signal <GND_9_o_Yin[9]_LessThan_751_o> created at line 438
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_767_o> created at line 449
+    Found 10-bit comparator greater for signal <Yin[9]_GND_9_o_LessThan_773_o> created at line 450
+    Found 10-bit comparator greater for signal <GND_9_o_Yin[9]_LessThan_776_o> created at line 451
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_778_o> created at line 452
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_779_o> created at line 452
+    Found 10-bit comparator greater for signal <GND_9_o_Yin[9]_LessThan_780_o> created at line 452
+    Found 10-bit comparator greater for signal <Yin[9]_GND_9_o_LessThan_781_o> created at line 452
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_783_o> created at line 453
+    Found 10-bit comparator greater for signal <GND_9_o_Yin[9]_LessThan_796_o> created at line 462
+    Found 10-bit comparator greater for signal <Yin[9]_GND_9_o_LessThan_797_o> created at line 462
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_799_o> created at line 463
+    Found 10-bit comparator greater for signal <GND_9_o_Yin[9]_LessThan_804_o> created at line 464
+    Found 10-bit comparator greater for signal <Yin[9]_GND_9_o_LessThan_805_o> created at line 464
+    Found 10-bit comparator greater for signal <GND_9_o_Yin[9]_LessThan_808_o> created at line 465
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_810_o> created at line 466
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_811_o> created at line 466
+    Found 10-bit comparator greater for signal <GND_9_o_Yin[9]_LessThan_812_o> created at line 466
+    Found 10-bit comparator greater for signal <Yin[9]_GND_9_o_LessThan_813_o> created at line 466
+    Found 10-bit comparator greater for signal <GND_9_o_Yin[9]_LessThan_816_o> created at line 467
+    Found 10-bit comparator greater for signal <Yin[9]_GND_9_o_LessThan_817_o> created at line 467
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_825_o> created at line 476
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_826_o> created at line 476
+    Found 10-bit comparator greater for signal <Yin[9]_GND_9_o_LessThan_832_o> created at line 477
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_833_o> created at line 478
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_834_o> created at line 478
+    Found 10-bit comparator greater for signal <GND_9_o_Yin[9]_LessThan_835_o> created at line 478
+    Found 10-bit comparator greater for signal <GND_9_o_Xin[9]_LessThan_837_o> created at line 479
+    Found 10-bit comparator greater for signal <Xin[9]_GND_9_o_LessThan_838_o> created at line 479
+    Found 10-bit comparator greater for signal <GND_9_o_Yin[9]_LessThan_839_o> created at line 479
+    Found 10-bit comparator greater for signal <Yin[9]_GND_9_o_LessThan_840_o> created at line 479
+    Summary:
+	inferred 123 Comparator(s).
+	inferred 126 Multiplexer(s).
+Unit <VGA_Display> synthesized.
+
+Synthesizing Unit <Refresh_Screen>.
+    Related source file is "C:\ProySisDigAva\Final_Project_My_Height\Refresh_Screen.vhd".
+    Found 4-bit register for signal <Divider>.
+    Found 1-bit register for signal <En_Re>.
+    Found 4-bit adder for signal <Divider[3]_GND_10_o_add_1_OUT> created at line 48.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Refresh_Screen> synthesized.
+
+Synthesizing Unit <Cont0a2>.
+    Related source file is "C:\ProySisDigAva\Final_Project_My_Height\Cont0a2.vhd".
+    Found 2-bit register for signal <Sel>.
+    Found 2-bit adder for signal <Sel[1]_GND_12_o_add_1_OUT> created at line 45.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Cont0a2> synthesized.
+
+Synthesizing Unit <Mux3a1_Color>.
+    Related source file is "C:\ProySisDigAva\Final_Project_My_Height\Mux3a1_Color.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux3a1_Color> synthesized.
+
+Synthesizing Unit <Ping_Sensor>.
+    Related source file is "C:\ProySisDigAva\Final_Project_My_Height\Ping_Sensor.vhd".
+        NBITS = 9
+        NSALIDA = 11
+    Found 2-bit register for signal <pres_state>.
+    Found 19-bit register for signal <MicroSecondCount>.
+    Found 9-bit register for signal <NSTD>.
+    Found 8-bit register for signal <LEDs>.
+    Found 15-bit register for signal <ResponseDuration>.
+    Found finite state machine <FSM_1> for signal <pres_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 13                                             |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | Rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | start                                          |
+    | Power Up State     | start                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11-bit subtractor for signal <GND_14_o_GND_14_o_sub_22_OUT> created at line 80.
+    Found 20-bit subtractor for signal <GND_14_o_GND_14_o_sub_44_OUT> created at line 118.
+    Found 15-bit adder for signal <ResponseDuration[14]_GND_14_o_add_2_OUT> created at line 72.
+    Found 4-bit adder for signal <GND_14_o_GND_14_o_add_25_OUT> created at line 93.
+    Found 4-bit adder for signal <NSTD[8]_GND_14_o_add_27_OUT> created at line 93.
+    Found 4-bit adder for signal <NSTD[7]_GND_14_o_add_29_OUT> created at line 93.
+    Found 4-bit adder for signal <NSTD[6]_GND_14_o_add_31_OUT> created at line 93.
+    Found 4-bit adder for signal <GND_14_o_GND_14_o_add_33_OUT> created at line 97.
+    Found 4-bit adder for signal <NSTD[5]_GND_14_o_add_35_OUT> created at line 93.
+    Found 4-bit adder for signal <GND_14_o_GND_14_o_add_37_OUT> created at line 97.
+    Found 4-bit adder for signal <NSTD[4]_GND_14_o_add_39_OUT> created at line 93.
+    Found 4-bit adder for signal <NSTD[8]_GND_14_o_add_41_OUT> created at line 97.
+    Found 19-bit adder for signal <MicroSecondCount[18]_GND_14_o_add_45_OUT> created at line 122.
+    Found 10-bit subtractor for signal <GND_14_o_GND_14_o_sub_23_OUT<9:0>> created at line 80.
+    Found 15x9-bit multiplier for signal <ResponseDuration[14]_PWR_14_o_MuLt_18_OUT> created at line 78.
+    Found 1-bit tristate buffer for signal <Tx> created at line 158
+    Found 10-bit comparator greater for signal <Dis[9]_GND_14_o_LessThan_21_o> created at line 79
+    Found 3-bit comparator greater for signal <PWR_14_o_NSTD[8]_LessThan_25_o> created at line 92
+    Found 4-bit comparator greater for signal <GND_14_o_NSTD[8]_LessThan_27_o> created at line 92
+    Found 4-bit comparator greater for signal <GND_14_o_NSTD[7]_LessThan_29_o> created at line 92
+    Found 4-bit comparator greater for signal <GND_14_o_NSTD[6]_LessThan_31_o> created at line 92
+    Found 3-bit comparator greater for signal <PWR_14_o_GND_14_o_LessThan_33_o> created at line 96
+    Found 4-bit comparator greater for signal <GND_14_o_NSTD[5]_LessThan_35_o> created at line 92
+    Found 4-bit comparator greater for signal <GND_14_o_GND_14_o_LessThan_37_o> created at line 96
+    Found 4-bit comparator greater for signal <GND_14_o_NSTD[4]_LessThan_39_o> created at line 92
+    Found 4-bit comparator greater for signal <GND_14_o_NSTD[8]_LessThan_41_o> created at line 96
+    Found 20-bit comparator equal for signal <GND_14_o_GND_14_o_equal_45_o> created at line 118
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred  14 Adder/Subtractor(s).
+	inferred  51 D-type flip-flop(s).
+	inferred  11 Comparator(s).
+	inferred  39 Multiplexer(s).
+	inferred   1 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <Ping_Sensor> synthesized.
+
+Synthesizing Unit <div_24u_15u>.
+    Related source file is "".
+    Found 39-bit adder for signal <GND_16_o_b[14]_add_1_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_16_o_b[14]_add_3_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_16_o_b[14]_add_5_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_16_o_b[14]_add_7_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_16_o_b[14]_add_9_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_16_o_b[14]_add_11_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_16_o_b[14]_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <GND_16_o_b[14]_add_15_OUT> created at line 0.
+    Found 31-bit adder for signal <GND_16_o_b[14]_add_17_OUT> created at line 0.
+    Found 30-bit adder for signal <GND_16_o_b[14]_add_19_OUT> created at line 0.
+    Found 29-bit adder for signal <GND_16_o_b[14]_add_21_OUT> created at line 0.
+    Found 28-bit adder for signal <GND_16_o_b[14]_add_23_OUT> created at line 0.
+    Found 27-bit adder for signal <GND_16_o_b[14]_add_25_OUT> created at line 0.
+    Found 26-bit adder for signal <GND_16_o_b[14]_add_27_OUT> created at line 0.
+    Found 25-bit adder for signal <GND_16_o_b[14]_add_29_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_b[14]_add_31_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_16_o_add_33_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_16_o_add_35_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_16_o_add_37_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_16_o_add_39_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_16_o_add_41_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_16_o_add_43_OUT[23:0]> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_16_o_add_45_OUT[23:0]> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_16_o_add_47_OUT[23:0]> created at line 0.
+    Found 39-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 31-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 29-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 28-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 27-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 26-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Summary:
+	inferred  24 Adder/Subtractor(s).
+	inferred  25 Comparator(s).
+	inferred 507 Multiplexer(s).
+Unit <div_24u_15u> synthesized.
+
+Synthesizing Unit <Clk_Divider_Ping>.
+    Related source file is "C:\ProySisDigAva\Final_Project_My_Height\Clk_Divider_Ping.vhd".
+    Found 7-bit register for signal <Cont>.
+    Found 1-bit register for signal <ClkOut>.
+    Found 7-bit adder for signal <Cont[6]_GND_18_o_add_1_OUT> created at line 49.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Clk_Divider_Ping> synthesized.
+
+Synthesizing Unit <Refresh_Display>.
+    Related source file is "C:\ProySisDigAva\Final_Project_My_Height\Refresh_Display.vhd".
+    Found 17-bit register for signal <Divider200Hz>.
+    Found 1-bit register for signal <ClkOut>.
+    Found 17-bit adder for signal <Divider200Hz[16]_GND_19_o_add_1_OUT> created at line 46.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Refresh_Display> synthesized.
+
+Synthesizing Unit <Cont0a3>.
+    Related source file is "C:\ProySisDigAva\Final_Project_My_Height\Cont0a3.vhd".
+    Found 2-bit register for signal <Conta>.
+    Found 2-bit adder for signal <Conta[1]_GND_21_o_add_0_OUT> created at line 42.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+Unit <Cont0a3> synthesized.
+
+Synthesizing Unit <Mux4a1_Info>.
+    Related source file is "C:\ProySisDigAva\Final_Project_My_Height\Mux4a1_Info.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <BCD> created at line 29.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux4a1_Info> synthesized.
+
+Synthesizing Unit <Mux4a1_Disp>.
+    Related source file is "C:\ProySisDigAva\Final_Project_My_Height\Mux4a1_Disp.vhd".
+    Found 4x4-bit Read Only RAM for signal <Anodo>
+    Summary:
+	inferred   1 RAM(s).
+Unit <Mux4a1_Disp> synthesized.
+
+Synthesizing Unit <DecBCD7Seg>.
+    Related source file is "C:\ProySisDigAva\Final_Project_My_Height\DecBCD7Seg.vhd".
+    Found 16x8-bit Read Only RAM for signal <Seg>
+    Summary:
+	inferred   1 RAM(s).
+Unit <DecBCD7Seg> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x8-bit single-port Read Only RAM                    : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 1
+ 15x9-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 48
+ 10-bit adder                                          : 2
+ 10-bit subtractor                                     : 3
+ 11-bit subtractor                                     : 1
+ 15-bit adder                                          : 1
+ 17-bit adder                                          : 1
+ 19-bit adder                                          : 1
+ 2-bit adder                                           : 3
+ 20-bit subtractor                                     : 1
+ 24-bit adder                                          : 9
+ 25-bit adder                                          : 1
+ 26-bit adder                                          : 1
+ 27-bit adder                                          : 1
+ 28-bit adder                                          : 1
+ 29-bit adder                                          : 1
+ 30-bit adder                                          : 1
+ 31-bit adder                                          : 1
+ 32-bit adder                                          : 1
+ 33-bit adder                                          : 1
+ 34-bit adder                                          : 1
+ 35-bit adder                                          : 1
+ 36-bit adder                                          : 1
+ 37-bit adder                                          : 1
+ 38-bit adder                                          : 1
+ 39-bit adder                                          : 1
+ 4-bit adder                                           : 10
+ 7-bit adder                                           : 1
+# Registers                                            : 15
+ 1-bit register                                        : 3
+ 10-bit register                                       : 2
+ 15-bit register                                       : 1
+ 17-bit register                                       : 1
+ 19-bit register                                       : 1
+ 2-bit register                                        : 3
+ 4-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 163
+ 10-bit comparator equal                               : 1
+ 10-bit comparator greater                             : 124
+ 10-bit comparator lessequal                           : 3
+ 20-bit comparator equal                               : 1
+ 24-bit comparator lessequal                           : 10
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator lessequal                           : 1
+ 27-bit comparator lessequal                           : 1
+ 28-bit comparator lessequal                           : 1
+ 29-bit comparator lessequal                           : 1
+ 3-bit comparator greater                              : 2
+ 30-bit comparator lessequal                           : 1
+ 31-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 1
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 38-bit comparator lessequal                           : 1
+ 39-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 7
+# Multiplexers                                         : 678
+ 1-bit 2-to-1 multiplexer                              : 540
+ 10-bit 2-to-1 multiplexer                             : 1
+ 15-bit 2-to-1 multiplexer                             : 1
+ 17-bit 2-to-1 multiplexer                             : 1
+ 19-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 1
+ 24-bit 2-to-1 multiplexer                             : 3
+ 4-bit 2-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 1
+ 8-bit 12-to-1 multiplexer                             : 3
+ 8-bit 2-to-1 multiplexer                              : 124
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Clk_Divider_Ping>.
+The following registers are absorbed into counter <Cont>: 1 register on signal <Cont>.
+Unit <Clk_Divider_Ping> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Clk_Divider_VGA>.
+The following registers are absorbed into counter <Cont>: 1 register on signal <Cont>.
+Unit <Clk_Divider_VGA> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Cont0a3>.
+The following registers are absorbed into counter <Conta>: 1 register on signal <Conta>.
+Unit <Cont0a3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DecBCD7Seg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Seg> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <BCD>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Seg>           |          |
+    -----------------------------------------------------------------------
+Unit <DecBCD7Seg> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Mux4a1_Disp>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Anodo> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Sel>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Anodo>         |          |
+    -----------------------------------------------------------------------
+Unit <Mux4a1_Disp> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Ping_Sensor>.
+The following registers are absorbed into counter <MicroSecondCount>: 1 register on signal <MicroSecondCount>.
+The following registers are absorbed into counter <ResponseDuration>: 1 register on signal <ResponseDuration>.
+Unit <Ping_Sensor> synthesized (advanced).
+
+Synthesizing (advanced) Unit <VGA>.
+The following registers are absorbed into counter <CuentaH>: 1 register on signal <CuentaH>.
+The following registers are absorbed into counter <CuentaV>: 1 register on signal <CuentaV>.
+Unit <VGA> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x8-bit single-port distributed Read Only RAM        : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Multipliers                                          : 1
+ 15x9-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 40
+ 10-bit subtractor                                     : 2
+ 10-bit subtractor borrow in                           : 1
+ 17-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 20-bit subtractor                                     : 1
+ 24-bit adder                                          : 24
+ 4-bit adder                                           : 10
+# Counters                                             : 7
+ 10-bit up counter                                     : 2
+ 15-bit up counter                                     : 1
+ 19-bit up counter                                     : 1
+ 2-bit up counter                                      : 2
+ 7-bit up counter                                      : 1
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+# Comparators                                          : 163
+ 10-bit comparator equal                               : 1
+ 10-bit comparator greater                             : 124
+ 10-bit comparator lessequal                           : 3
+ 20-bit comparator equal                               : 1
+ 24-bit comparator lessequal                           : 10
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator lessequal                           : 1
+ 27-bit comparator lessequal                           : 1
+ 28-bit comparator lessequal                           : 1
+ 29-bit comparator lessequal                           : 1
+ 3-bit comparator greater                              : 2
+ 30-bit comparator lessequal                           : 1
+ 31-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 1
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 38-bit comparator lessequal                           : 1
+ 39-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 7
+# Multiplexers                                         : 674
+ 1-bit 2-to-1 multiplexer                              : 540
+ 10-bit 2-to-1 multiplexer                             : 1
+ 17-bit 2-to-1 multiplexer                             : 1
+ 24-bit 2-to-1 multiplexer                             : 3
+ 4-bit 2-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 12-to-1 multiplexer                             : 3
+ 8-bit 2-to-1 multiplexer                              : 124
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <U2/FSM_0> on signal <pr_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ al_hs | 00
+ fp_hs | 01
+ pu_hs | 10
+ bp_hs | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <U7/FSM_1> on signal <pres_state[1:2]> with gray encoding.
+----------------------
+ State    | Encoding
+----------------------
+ start    | 00
+ holdoff  | 01
+ response | 11
+ delay    | 10
+----------------------
+
+Optimizing unit <Top> ...
+WARNING:Xst:1710 - FF/Latch <U7/NSTD_8> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <VGA> ...
+
+Optimizing unit <Refresh_Screen> ...
+
+Optimizing unit <div_24u_15u> ...
+
+Optimizing unit <Refresh_Display> ...
+
+Optimizing unit <VGA_Display> ...
+INFO:Xst:3203 - The FF/Latch <U1/Cont_0> in Unit <Top> is the opposite to the following 2 FFs/Latches, which will be removed : <U4/Divider_0> <U9/Divider200Hz_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 11.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 109
+ Flip-Flops                                            : 109
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1441
+#      GND                         : 1
+#      INV                         : 26
+#      LUT1                        : 38
+#      LUT2                        : 65
+#      LUT3                        : 87
+#      LUT4                        : 80
+#      LUT5                        : 176
+#      LUT6                        : 504
+#      MUXCY                       : 231
+#      MUXF7                       : 9
+#      VCC                         : 1
+#      XORCY                       : 223
+# FlipFlops/Latches                : 109
+#      FD                          : 2
+#      FDC                         : 32
+#      FDCE                        : 23
+#      FDE                         : 34
+#      FDRE                        : 18
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IBUF                        : 2
+#      OBUF                        : 30
+#      OBUFT                       : 1
+# DSPs                             : 1
+#      DSP48A1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             109  out of  18224     0%  
+ Number of Slice LUTs:                  976  out of   9112    10%  
+    Number used as Logic:               976  out of   9112    10%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    992
+   Number with an unused Flip Flop:     883  out of    992    89%  
+   Number with an unused LUT:            16  out of    992     1%  
+   Number of fully used LUT-FF pairs:    93  out of    992     9%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                          34
+ Number of bonded IOBs:                  34  out of    232    14%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk_100M                           | BUFGP                  | 109   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 30.737ns (Maximum Frequency: 32.535MHz)
+   Minimum input arrival time before clock: 5.593ns
+   Maximum output required time after clock: 15.327ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk_100M'
+  Clock period: 30.737ns (frequency: 32.535MHz)
+  Total number of paths / destination ports: 2670083130894402 / 199
+-------------------------------------------------------------------------
+Delay:               30.737ns (Levels of Logic = 32)
+  Source:            U7/ResponseDuration_14 (FF)
+  Destination:       U7/LEDs_0 (FF)
+  Source Clock:      Clk_100M rising
+  Destination Clock: Clk_100M rising
+
+  Data Path: U7/ResponseDuration_14 to U7/LEDs_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.447   0.616  U7/ResponseDuration_14 (U7/ResponseDuration_14)
+     DSP48A1:B14->M23     58   3.364   1.601  U7/Mmult_ResponseDuration[14]_PWR_14_o_MuLt_18_OUT (U7/ResponseDuration[14]_PWR_14_o_MuLt_18_OUT<23>)
+     LUT3:I2->O           11   0.205   0.987  U7/ResponseDuration[14]_PWR_14_o_div_19/o<9>13_SW0 (N239)
+     LUT6:I4->O           10   0.203   0.857  U7/ResponseDuration[14]_PWR_14_o_div_19/Mmux_a[0]_a[23]_MUX_1085_o151 (U7/ResponseDuration[14]_PWR_14_o_div_19/a[14]_a[23]_MUX_1071_o)
+     LUT6:I5->O           15   0.205   0.982  U7/ResponseDuration[14]_PWR_14_o_div_19/o<8>23 (U7/ResponseDuration[14]_PWR_14_o_div_19/o<8>22)
+     LUT6:I5->O            3   0.205   0.651  U7/ResponseDuration[14]_PWR_14_o_div_19/o<8>24_1 (U7/ResponseDuration[14]_PWR_14_o_div_19/o<8>24)
+     LUT6:I5->O            4   0.205   0.912  U7/ResponseDuration[14]_PWR_14_o_div_19/o<7>24 (U7/ResponseDuration[14]_PWR_14_o_div_19/o<7>23)
+     LUT6:I3->O            7   0.205   0.774  U7/ResponseDuration[14]_PWR_14_o_div_19/o<7>25_1 (U7/ResponseDuration[14]_PWR_14_o_div_19/o<7>25)
+     LUT5:I4->O            9   0.205   1.058  U7/ResponseDuration[14]_PWR_14_o_div_19/o<6>22 (U7/ResponseDuration[14]_PWR_14_o_div_19/o<6>21)
+     LUT5:I2->O           14   0.205   0.958  U7/ResponseDuration[14]_PWR_14_o_div_19/Mmux_a[0]_a[23]_MUX_1157_o171_SW0 (N127)
+     LUT6:I5->O           11   0.205   0.987  U7/ResponseDuration[14]_PWR_14_o_div_19/Mmux_a[0]_a[23]_MUX_1157_o171 (U7/ResponseDuration[14]_PWR_14_o_div_19/a[16]_a[23]_MUX_1141_o)
+     LUT5:I3->O           15   0.203   0.982  U7/ResponseDuration[14]_PWR_14_o_div_19/Mmux_a[0]_a[23]_MUX_1181_o1111_SW0 (N117)
+     LUT6:I5->O           12   0.205   1.013  U7/ResponseDuration[14]_PWR_14_o_div_19/Mmux_a[0]_a[23]_MUX_1181_o161 (U7/ResponseDuration[14]_PWR_14_o_div_19/a[15]_a[23]_MUX_1166_o)
+     LUT5:I3->O           21   0.203   1.114  U7/ResponseDuration[14]_PWR_14_o_div_19/Mmux_a[0]_a[23]_MUX_1205_o151_SW0 (N111)
+     LUT6:I5->O           17   0.205   1.028  U7/ResponseDuration[14]_PWR_14_o_div_19/Mmux_a[0]_a[23]_MUX_1205_o151 (U7/ResponseDuration[14]_PWR_14_o_div_19/a[14]_a[23]_MUX_1191_o)
+     LUT5:I4->O           13   0.205   0.933  U7/ResponseDuration[14]_PWR_14_o_div_19/Mmux_n173151_SW0 (N105)
+     LUT6:I5->O            4   0.205   1.028  U7/ResponseDuration[14]_PWR_14_o_div_19/Mmux_n173171 (U7/ResponseDuration[14]_PWR_14_o_div_19/n1731<15>)
+     LUT6:I1->O           19   0.203   1.072  U7/ResponseDuration[14]_PWR_14_o_div_19/o<2>33_1 (U7/ResponseDuration[14]_PWR_14_o_div_19/o<2>331)
+     LUT6:I5->O            3   0.205   0.995  U7/ResponseDuration[14]_PWR_14_o_div_19/Mmux_n1735221 (U7/ResponseDuration[14]_PWR_14_o_div_19/n1735<7>)
+     LUT5:I0->O            1   0.203   0.000  U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<1>_lut<0> (U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<1>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<1>_cy<0> (U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<1>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<1>_cy<1> (U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<1>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<1>_cy<2> (U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<1>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<1>_cy<3> (U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<1>_cy<3>)
+     MUXCY:CI->O          30   0.019   1.264  U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<1>_cy<4> (U7/Msub_GND_14_o_GND_14_o_sub_23_OUT<9:0>_Madd_lut<1>)
+     LUT5:I4->O            2   0.205   0.961  U7/ResponseDuration[14]_PWR_14_o_div_19/Mmux_n1638211 (U7/ResponseDuration[14]_PWR_14_o_div_19/n1638<6>)
+     LUT5:I0->O            1   0.203   0.000  U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<0>_lut<0> (U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<0>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<0>_cy<0> (U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<0>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<0>_cy<1> (U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<0>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<0>_cy<2> (U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<0>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<0>_cy<3> (U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<0>_cy<3>)
+     MUXCY:CI->O           4   0.019   0.683  U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<0>_cy<4> (U7/n0102<0>)
+     INV:I->O              1   0.206   0.579  U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<0>_cy<4>_inv_INV_0 (U7/ResponseDuration[14]_PWR_14_o_div_19/Mcompar_o<0>_cy<4>_inv)
+     FDE:D                     0.102          U7/LEDs_0
+    ----------------------------------------
+    Total                     30.737ns (8.703ns logic, 22.034ns route)
+                                       (28.3% logic, 71.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_100M'
+  Total number of paths / destination ports: 100 / 98
+-------------------------------------------------------------------------
+Offset:              5.593ns (Levels of Logic = 4)
+  Source:            Rst (PAD)
+  Destination:       U2/CuentaV_0 (FF)
+  Destination Clock: Clk_100M rising
+
+  Data Path: Rst to U2/CuentaV_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            62   1.222   1.991  Rst_IBUF (Rst_IBUF)
+     LUT6:I0->O           10   0.203   1.085  U2/_n0080_inv1 (U2/_n0080_inv)
+     LUT3:I0->O            1   0.205   0.580  U2/CuentaV_0_glue_ce (U2/CuentaV_0_glue_ce)
+     LUT6:I5->O            1   0.205   0.000  U2/CuentaV_0_glue_set (U2/CuentaV_0_glue_set)
+     FD:D                      0.102          U2/CuentaV_0
+    ----------------------------------------
+    Total                      5.593ns (1.937ns logic, 3.656ns route)
+                                       (34.6% logic, 65.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_100M'
+  Total number of paths / destination ports: 88991 / 26
+-------------------------------------------------------------------------
+Offset:              15.327ns (Levels of Logic = 11)
+  Source:            U2/CuentaH_1 (FF)
+  Destination:       Red<1> (PAD)
+  Source Clock:      Clk_100M rising
+
+  Data Path: U2/CuentaH_1 to Red<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            49   0.447   1.638  U2/CuentaH_1 (U2/CuentaH_1)
+     LUT3:I1->O            1   0.203   0.580  U2/Msub_X_cy<7>1_SW0 (N23)
+     LUT6:I5->O           25   0.205   1.193  U2/Msub_X_cy<7>1 (U2/Msub_X_cy<7>)
+     LUT3:I2->O           49   0.205   1.534  U2/Msub_X_xor<9>11 (Xemb<9>)
+     LUT6:I5->O           11   0.205   1.111  U3/GND_9_o_Xin[9]_LessThan_261_o11 (U3/GND_9_o_Xin[9]_LessThan_261_o)
+     LUT3:I0->O            3   0.205   1.015  U3/Val<2>11521 (U3/Val<2>1152)
+     LUT6:I0->O            1   0.203   0.944  U3/PWR_10_o_PWR_10_o_mux_191_OUT<0>4 (U3/PWR_10_o_PWR_10_o_mux_191_OUT<0>4)
+     LUT6:I0->O            1   0.203   0.808  U3/PWR_10_o_PWR_10_o_mux_191_OUT<0>5 (U3/PWR_10_o_PWR_10_o_mux_191_OUT<0>)
+     LUT6:I3->O            1   0.205   0.000  U3/Mmux__n0977_6 (U3/Mmux__n0977_6)
+     MUXF7:I1->O           1   0.140   0.827  U3/Mmux__n0977_5_f7 (U3/Mmux__n0977_5_f7)
+     LUT6:I2->O            4   0.203   0.683  U6/Col<0> (Blue_0_OBUF)
+     OBUF:I->O                 2.571          Blue_0_OBUF (Blue<0>)
+    ----------------------------------------
+    Total                     15.327ns (4.995ns logic, 10.332ns route)
+                                       (32.6% logic, 67.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk_100M
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_100M       |   30.737|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.70 secs
+ 
+--> 
+
+Total memory usage is 4542712 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+
